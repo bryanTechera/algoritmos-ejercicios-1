@@ -264,8 +264,47 @@ NodoLista* insComFin(NodoLista* l, int x)
 
 NodoLista* exor(NodoLista* l1, NodoLista* l2)
 {
-	// IMPLEMENTAR SOLUCION
-	return NULL;
+	NodoLista* nodo = new NodoLista;
+	
+	if (!l1 && !l2) {
+		return NULL;
+	}
+	else{
+		while (l1 && l1->sig && l1->dato == l1->sig->dato) {
+			l1 = l1->sig;
+		}
+		
+		while (l2 && l2->sig && l2->dato == l2->sig->dato) {
+			l2 = l2->sig;
+		}
+
+		if (l1 && !l2) {
+				nodo->dato = l1->dato;
+				nodo->sig = exor(l1->sig, l2);
+		}
+		else if (!l1 && l2) {
+				nodo->dato = l2->dato;
+				nodo->sig = exor(l1, l2->sig);
+		}
+		else {
+			//tengo datos en ambas
+			if (l1->dato == l2->dato) {
+				nodo = exor(l1->sig, l2->sig);
+			}
+			else {
+				if (l1->dato < l2->dato) {
+					nodo->dato = l1->dato;
+					nodo->sig = exor(l1->sig, l2);
+				}
+				else {
+					nodo->dato = l2->dato;
+					nodo->sig = exor(l1, l2->sig);
+				}
+			}
+		}
+	}
+
+	return nodo;
 }
 
 void eliminarDuplicadosListaOrdenadaDos(NodoLista*& l) 
