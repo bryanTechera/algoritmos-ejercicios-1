@@ -216,8 +216,44 @@ NodoLista* intercalarIter(NodoLista* l1, NodoLista* l2)
 
 NodoLista* intercalarRec(NodoLista* l1, NodoLista* l2)
 {
-	// IMPLEMENTAR SOLUCION
-	return NULL;
+	/*
+	Ejemplo
+	Entrada: (((1,3,5,7,9,9), (2,2,4,6,8))
+	Salida: (1,2,2,3,4,5,6,7,8,9,9)
+	*/
+	NodoLista* nodo = NULL;
+	NodoLista* nodoSig = NULL;
+	int dato;
+	if (!l1 && !l2) {
+		return nodo;
+	}
+	else if (l1 && l2) {
+		if (l1->dato < l2->dato) {
+			dato = l1->dato;
+			nodoSig = intercalarRec(l1->sig, l2);
+		}
+		else {
+			dato = l2->dato;
+			nodoSig = intercalarRec(l1, l2->sig);
+		}
+	}
+	else {
+		//alguna de las listas esta vacia
+		if (!l1) {
+			dato = l2->dato;
+			nodoSig = intercalarRec(l1, l2->sig);
+
+		}
+		else {
+			dato = l1->dato;
+			nodoSig = intercalarRec(l1->sig, l2);
+			
+		}
+	}
+	nodo = new NodoLista;
+	nodo->dato = dato;
+	nodo->sig = nodoSig;
+	return nodo;
 }
 
 NodoLista* insComFin(NodoLista* l, int x)
