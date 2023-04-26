@@ -261,48 +261,27 @@ Prueba EXOR 14 -> OK
 PRUEBAS FUNCION PruebaEXOR                                         PRUEBAS CORRECTAS
 ----------------------------------------------
 ----------------------------------------------
-Prueba Eliminar Duplicados Lista Ordenados 2 1 -> ERROR salida incorrecta
-	Parametros de entrada: (100,100,200,200,300,300,400,400)
-	Se esperaba: ()
-	Se recibio:  (100,100,200,200,300,300,400,400)
+Prueba Eliminar Duplicados Lista Ordenados 2 1 -> OK
 ----------------------------------------------
 Prueba Eliminar Duplicados Lista Ordenados 2 2 -> OK
 ----------------------------------------------
-Prueba Eliminar Duplicados Lista Ordenados 2 3 -> ERROR salida incorrecta
-	Parametros de entrada: (-1,0,1,1,1,1,5,5,5,5,5)
-	Se esperaba: (-1,0)
-	Se recibio:  (-1,0,1,1,1,1,5,5,5,5,5)
+Prueba Eliminar Duplicados Lista Ordenados 2 3 -> OK
 ----------------------------------------------
-Prueba Eliminar Duplicados Lista Ordenados 2 4 -> ERROR salida incorrecta
-	Parametros de entrada: (-5,-5,-4,0,2,3,5,6,7,9,10,15,50,65,78,150)
-	Se esperaba: (-4,0,2,3,5,6,7,9,10,15,50,65,78,150)
-	Se recibio:  (-5,-5,-4,0,2,3,5,6,7,9,10,15,50,65,78,150)
+Prueba Eliminar Duplicados Lista Ordenados 2 4 -> OK
 ----------------------------------------------
-Prueba Eliminar Duplicados Lista Ordenados 2 5 -> ERROR salida incorrecta
-	Parametros de entrada: (0,1,2,2,3,3,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,10)
-	Se esperaba: (0,1,9,10)
-	Se recibio:  (0,1,2,2,3,3,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,10)
+Prueba Eliminar Duplicados Lista Ordenados 2 5 -> OK
 ----------------------------------------------
-Prueba Eliminar Duplicados Lista Ordenados 2 6 -> ERROR salida incorrecta
-	Parametros de entrada: (0,0,0,1,1,1)
-	Se esperaba: ()
-	Se recibio:  (0,0,0,1,1,1)
+Prueba Eliminar Duplicados Lista Ordenados 2 6 -> OK
 ----------------------------------------------
-Prueba Eliminar Duplicados Lista Ordenados 2 7 -> ERROR salida incorrecta
-	Parametros de entrada: (1,1,2,2,2,3,3,3,3,5)
-	Se esperaba: (5)
-	Se recibio:  (1,1,2,2,2,3,3,3,3,5)
+Prueba Eliminar Duplicados Lista Ordenados 2 7 -> OK
 ----------------------------------------------
 Prueba Eliminar Duplicados Lista Ordenados 2 8 -> OK
 ----------------------------------------------
 Prueba Eliminar Duplicados Lista Ordenados 2 9 -> OK
 ----------------------------------------------
-Prueba Eliminar Duplicados Lista Ordenados 2 10 -> ERROR salida incorrecta
-	Parametros de entrada: (0,1,1,2,2,2,3,3,3,3,4,4,4,4,4)
-	Se esperaba: (0)
-	Se recibio:  (0,1,1,2,2,2,3,3,3,3,4,4,4,4,4)
+Prueba Eliminar Duplicados Lista Ordenados 2 10 -> OK
 ----------------------------------------------
-PRUEBAS FUNCION PruebaEliminarDuplicadosListaOrdenadaDos           HAY PRUEBAS INCORRECTAS
+PRUEBAS FUNCION PruebaEliminarDuplicadosListaOrdenadaDos           PRUEBAS CORRECTAS
 ----------------------------------------------
 ----------------------------------------------
 Prueba palindromo de listas 1 -> ERROR salida incorrecta
@@ -436,5 +415,5 @@ PRUEBAS FUNCION PruebaMoverNodo                                    HAY PRUEBAS I
 ----------------------------------------------
 ----------------------------------------------
 PRUEBAS FUNCIONES 
-PRUEBAS FUNCIONES                              RESULTADO LISTAS => CORRECTAS:  7 INCORRECTAS:  5
+PRUEBAS FUNCIONES                              RESULTADO LISTAS => CORRECTAS:  8 INCORRECTAS:  4
 PRUEBAS FUNCIONES 

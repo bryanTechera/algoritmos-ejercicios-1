@@ -307,9 +307,51 @@ NodoLista* exor(NodoLista* l1, NodoLista* l2)
 	return nodo;
 }
 
+NodoLista* eliminarSecuenciaRepetida(NodoLista*l) {
+	if (!l) {
+		return NULL;
+	}
+	
+	int ultimoRep = l->dato;
+	while (l->sig && l->dato == ultimoRep) {
+		NodoLista* borro = l;
+		l = borro->sig;
+		delete borro;
+	}
+	if (l->dato == ultimoRep) {
+		NodoLista* borro = l;
+		l = NULL;
+		delete borro;
+	}
+	return l;
+}
 void eliminarDuplicadosListaOrdenadaDos(NodoLista*& l) 
 {
-	// IMPLEMENTAR SOLUCION
+	/*
+	Ejemplo
+	Entrada: (0,1,1,2,2,2,3,3,3,3,4,4,4,4,4)
+	Lista resultado: (0)
+	*/
+
+	//eliminar inicio
+	while (l && l->sig && l->dato == l->sig->dato) {
+		l = eliminarSecuenciaRepetida(l);
+	}
+
+	//eliminar enmedio y fin
+	NodoLista* ultimoOrdenado = l;
+	NodoLista* aux = ultimoOrdenado ? ultimoOrdenado->sig : NULL;
+	while (aux&&aux->sig) {
+		if (aux->dato == aux->sig->dato) {
+			NodoLista* proximo = eliminarSecuenciaRepetida(aux);
+			ultimoOrdenado->sig = proximo;
+		}
+		else {
+			ultimoOrdenado = ultimoOrdenado->sig;
+		}
+		aux = ultimoOrdenado->sig;
+	}
+
 }
 
 bool palindromo(NodoLista* l)
