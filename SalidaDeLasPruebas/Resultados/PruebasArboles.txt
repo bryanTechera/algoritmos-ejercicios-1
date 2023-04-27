@@ -84,55 +84,31 @@ Prueba Son iguales 10 -> OK
 PRUEBAS FUNCION PruebaSonIguales                                   HAY PRUEBAS INCORRECTAS
 ----------------------------------------------
 ----------------------------------------------
-Prueba existe camino con suma 1 -> ERROR salida incorrecta
-	Parametros de entrada: {}, 0
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 1 -> OK
 ----------------------------------------------
-Prueba existe camino con suma 2 -> ERROR salida incorrecta
-	Parametros de entrada: {1,2,3}, 4
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 2 -> OK
 ----------------------------------------------
-Prueba existe camino con suma 3 -> ERROR salida incorrecta
-	Parametros de entrada: {1,2,3,#,#,4,#,#,5}, 3
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 3 -> OK
 ----------------------------------------------
 Prueba existe camino con suma 4 -> OK
 ----------------------------------------------
 Prueba existe camino con suma 5 -> OK
 ----------------------------------------------
-Prueba existe camino con suma 6 -> ERROR salida incorrecta
-	Parametros de entrada: {1,2,3,#,#,4,#,#,5}, 13
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 6 -> OK
 ----------------------------------------------
 Prueba existe camino con suma 7 -> OK
 ----------------------------------------------
 Prueba existe camino con suma 8 -> OK
 ----------------------------------------------
-Prueba existe camino con suma 9 -> ERROR salida incorrecta
-	Parametros de entrada: {1,1,#,5,7,1,5,6,2}, 11
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 9 -> OK
 ----------------------------------------------
-Prueba existe camino con suma 10 -> ERROR salida incorrecta
-	Parametros de entrada: {1,1,#,5,7,1,5,6,2}, 12
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 10 -> OK
 ----------------------------------------------
-Prueba existe camino con suma 11 -> ERROR salida incorrecta
-	Parametros de entrada: {-1,1,#,5,7,1,5,6,2}, 10
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 11 -> OK
 ----------------------------------------------
-Prueba existe camino con suma 12 -> ERROR salida incorrecta
-	Parametros de entrada: {-7,1,#,5,7,1,5,6,2}, 0
-	Se esperaba: true
-	Se recibio:  false
+Prueba existe camino con suma 12 -> OK
 ----------------------------------------------
-PRUEBAS FUNCION PruebaExisteCaminoConSuma                          HAY PRUEBAS INCORRECTAS
+PRUEBAS FUNCION PruebaExisteCaminoConSuma                          PRUEBAS CORRECTAS
 ----------------------------------------------
 ----------------------------------------------
 Prueba es arbol balanceado 1 -> ERROR salida incorrecta
@@ -975,5 +951,5 @@ PRUEBAS FUNCION PruebaNivelConMasNodosAG                           HAY PRUEBAS I
 ----------------------------------------------
 ----------------------------------------------
 PRUEBAS FUNCIONES 
-PRUEBAS FUNCIONES                             RESULTADO ARBOLES => CORRECTAS:  0 INCORRECTAS: 18
+PRUEBAS FUNCIONES                             RESULTADO ARBOLES => CORRECTAS:  1 INCORRECTAS: 17
 PRUEBAS FUNCIONES 

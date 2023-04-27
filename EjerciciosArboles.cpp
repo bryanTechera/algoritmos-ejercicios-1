@@ -12,7 +12,30 @@ bool sonIguales(NodoAB* p, NodoAB* q) {
 }
 
 bool existeCaminoConSuma(NodoAB* raiz, int sum) {
-	// IMPLEMENTAR SOLUCION
+	if (!raiz && sum>0) {
+		return false;
+	}else if (!raiz && sum==0) {
+		return true;
+	}
+
+	int remanente = sum - raiz->dato;
+
+	if (!raiz->izq && !raiz->der) {
+		//llegue a una hoja
+		if (remanente == 0) {
+			return true;
+		}
+		return false;
+	}
+	else if(remanente > 0) {
+		//aun no estoy en una hoja
+		bool cumpleIzq =  raiz->izq && (remanente-raiz->izq->dato) >= 0 ? existeCaminoConSuma(raiz->izq, remanente) : false;
+		bool cumpleDef = raiz->der && (remanente - raiz->der->dato) >= 0 ? existeCaminoConSuma(raiz->der, remanente) : false;
+
+		return cumpleIzq || cumpleDef;
+	}
+	
+
 	return false;
 }
 
