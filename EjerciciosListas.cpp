@@ -306,7 +306,14 @@ NodoLista* exor(NodoLista* l1, NodoLista* l2)
 
 	return nodo;
 }
+/*
+PRE: Recibe lista l simplemente encadenada, ordenada.
+POS: Elimina todos los elementos de l que son igual al primero elemento de l
 
+Ejemplo
+Entrada: (2,2,2,2,2,3,4)
+Lista resultado: (3,4)
+*/
 NodoLista* eliminarSecuenciaRepetida(NodoLista*l) {
 	if (!l) {
 		return NULL;
@@ -360,9 +367,108 @@ bool palindromo(NodoLista* l)
 	return false;
 }
 
+/*
+PRE: Recibe una lista 'start' simplemente encadenada y una lista 'end','end' no puede ser una lista vacia.
+POS: Elimina todos los elementos de la lista 'start', desde el comienzo hasta encontrar un elemento que sea igual al valor del
+primer elemento de la lista end;
+
+Ejemplo
+Entrada: (3,4,5,6) (3,4)
+Lista resultado: (5,6)
+*/
+
+void borrado(NodoLista* start, NodoLista* end) {
+	if (!start) {
+		return;
+	}
+
+	bool stop = false;
+
+	while (start && start->dato != end->dato) {
+			NodoLista* borro = start;
+			start = start->sig;
+			delete borro;
+	}
+	if (start && start->dato == end->dato) {
+		NodoLista* borro = start;
+		start = start->sig;
+		delete borro;
+	}
+
+}
+
 void eliminarSecuencia(NodoLista* &l, NodoLista* secuencia) 
 {
-	// IMPLEMENTAR SOLUCION
+	/*
+	Ejemplos:
+
+Lista: (1,2,3,4,5,6,7,8,9)
+Secuencia: (4,5,6)
+Resultado: (1,2,3,7,8,9)
+
+Lista: (1,2,3,4,5,6,7,8,9)
+Secuencia: (2,4,5,6)
+Resultado: (1,2,3,4,5,6,7,8,9)
+*/
+	if (l && secuencia) {
+
+		NodoLista* aux = l;
+		NodoLista* aux2 = secuencia;
+
+		NodoLista* ultimoAeliminar = NULL;
+		//secuencia al inicio
+		while (aux && aux2 && aux->dato == aux2->dato) {
+			ultimoAeliminar = aux;
+			aux = aux->sig;
+			aux2 = aux2->sig;
+		}
+		if (aux && !aux2) {
+			NodoLista* borro = l;
+			l = aux;
+			borrado(borro, ultimoAeliminar);
+		}
+		aux2 = secuencia;
+		aux = l->sig;
+		//borrado enmedio/fin
+		NodoLista* ultimoOrdenado = l;
+		bool deleted = false;
+		while (aux && aux2 && !deleted) {
+			bool checking = false;
+			bool abance = false;
+			if (aux->dato == aux2->dato) {
+				checking = true;
+			}
+
+			while (aux2->sig && checking) {
+				if (aux2->sig && !aux->sig || aux->sig->dato != aux2->sig->dato) {
+					checking = false;
+				}
+				else {
+					abance = true;
+					aux = aux->sig;
+					aux2 = aux2->sig;
+				}
+			}
+
+			if (checking) {
+				NodoLista* borro = ultimoOrdenado->sig;
+				ultimoOrdenado->sig = aux->sig;
+				borrado(borro, aux2);
+				deleted = true;
+			}
+				
+			
+			if (!abance) {
+				aux = aux->sig;
+			}
+
+			aux2 = secuencia;
+			ultimoOrdenado = ultimoOrdenado->sig;
+		}
+
+
+
+	}
 }
 
 void moverNodo(NodoLista* &lista, unsigned int inicial, unsigned int final)
