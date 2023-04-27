@@ -42,12 +42,12 @@ int maximoNumero(unsigned int n) {
 	
 	int*  numeros = new int[n];
 	int i = 0;
-	int maximo=0;
+	int maximo=NULL;
 	int entrada;
 
 	for (int i = 0; i < n; i++) {
 		cin >> entrada;
-		if (entrada > maximo)
+		if (entrada > maximo || !maximo)
 			maximo = entrada;
 	}
 	

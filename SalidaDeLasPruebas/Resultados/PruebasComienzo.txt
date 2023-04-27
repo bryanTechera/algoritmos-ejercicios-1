@@ -109,12 +109,9 @@ Prueba Maximo Numero 5 -> OK
 ----------------------------------------------
 Prueba Maximo Numero 6 -> OK
 ----------------------------------------------
-Prueba Maximo Numero 7 -> ERROR salida incorrecta
-	Parametros de entrada: 3, -28923 -2229 -1122
-	Se esperaba: -1122
-	Se recibio:  0
+Prueba Maximo Numero 7 -> OK
 ----------------------------------------------
-PRUEBAS FUNCION PruebaMaximoNumero                                 HAY PRUEBAS INCORRECTAS
+PRUEBAS FUNCION PruebaMaximoNumero                                 PRUEBAS CORRECTAS
 ----------------------------------------------
 ----------------------------------------------
 Prueba ordenar vector de int 1 -> OK
@@ -430,5 +427,5 @@ PRUEBAS FUNCION PruebaOrdenarVecIntMergeSort                       HAY PRUEBAS I
 ----------------------------------------------
 ----------------------------------------------
 PRUEBAS FUNCIONES 
-PRUEBAS FUNCIONES                              RESULTADO VARIOS => CORRECTAS:  8 INCORRECTAS:  6
+PRUEBAS FUNCIONES                              RESULTADO VARIOS => CORRECTAS:  9 INCORRECTAS:  5
 PRUEBAS FUNCIONES 
