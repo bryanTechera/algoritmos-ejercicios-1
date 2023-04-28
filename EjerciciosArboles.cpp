@@ -2,8 +2,15 @@
 
 
 int altura(NodoAB* raiz){
-	// IMPLEMENTAR SOLUCION
-	return 0;
+	if (!raiz) {
+		return 0;
+	}
+
+	int aIzq = altura(raiz->izq);
+	int aDer = altura(raiz->der);
+
+	int altMayor = aIzq > aDer ? aIzq : aDer;
+	return 1 + altMayor;
 }
 
 bool sonIguales(NodoAB* p, NodoAB* q) {
@@ -40,8 +47,18 @@ bool existeCaminoConSuma(NodoAB* raiz, int sum) {
 }
 
 bool esArbolBalanceado(NodoAB *raiz) {
-	// IMPLEMENTAR SOLUCION
-	return false;
+	
+	if (!raiz) {
+		return true;
+	}
+	int alturaI = altura(raiz->izq);
+	int alturaD = altura(raiz->der);
+	bool nodoBalanceado = alturaI - alturaD >= -1 && alturaI - alturaD <= 1;
+	if (nodoBalanceado && raiz->izq && raiz->der) {
+		nodoBalanceado = esArbolBalanceado(raiz->izq) && esArbolBalanceado(raiz->der);
+	}
+	
+	return nodoBalanceado;
 }
 
 NodoLista* enNivel(NodoAB *a, int k) {

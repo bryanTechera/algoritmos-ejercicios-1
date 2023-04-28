@@ -1,52 +1,25 @@
 ----------------------------------------------
-Prueba Altura de un arbol binario 1 -> ERROR salida incorrecta 
-	Parametros de entrada: {1,5,2}
-	Se esperaba: 2
-	Se recibio:  0
+Prueba Altura de un arbol binario 1 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 2 -> ERROR salida incorrecta 
-	Parametros de entrada: {1,#,2,#,5}
-	Se esperaba: 3
-	Se recibio:  0
+Prueba Altura de un arbol binario 2 -> OK
 ----------------------------------------------
 Prueba Altura de un arbol binario 3 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 4 -> ERROR salida incorrecta 
-	Parametros de entrada: {1,2,3}
-	Se esperaba: 2
-	Se recibio:  0
+Prueba Altura de un arbol binario 4 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 5 -> ERROR salida incorrecta 
-	Parametros de entrada: {1,3}
-	Se esperaba: 2
-	Se recibio:  0
+Prueba Altura de un arbol binario 5 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 6 -> ERROR salida incorrecta 
-	Parametros de entrada: {1}
-	Se esperaba: 1
-	Se recibio:  0
+Prueba Altura de un arbol binario 6 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 7 -> ERROR salida incorrecta 
-	Parametros de entrada: {1,2,3,1,#,#,#,#,3,1,2,1,1,#,#,#,#,#,4,1,#,2,2}
-	Se esperaba: 9
-	Se recibio:  0
+Prueba Altura de un arbol binario 7 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 8 -> ERROR salida incorrecta 
-	Parametros de entrada: {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
-	Se esperaba: 4
-	Se recibio:  0
+Prueba Altura de un arbol binario 8 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 9 -> ERROR salida incorrecta 
-	Parametros de entrada: {3,3,3,#,1,#,1,#,1,#,1,2,2,#,#,#,#,#,3,1,#,#,4}
-	Se esperaba: 8
-	Se recibio:  0
+Prueba Altura de un arbol binario 9 -> OK
 ----------------------------------------------
-Prueba Altura de un arbol binario 10 -> ERROR salida incorrecta 
-	Parametros de entrada: {1,3,#,1}
-	Se esperaba: 3
-	Se recibio:  0
+Prueba Altura de un arbol binario 10 -> OK
 ----------------------------------------------
-PRUEBAS FUNCION PruebaAltura                                       HAY PRUEBAS INCORRECTAS
+PRUEBAS FUNCION PruebaAltura                                       PRUEBAS CORRECTAS
 ----------------------------------------------
 ----------------------------------------------
 Prueba Son iguales 1 -> ERROR salida incorrecta
@@ -111,70 +84,37 @@ Prueba existe camino con suma 12 -> OK
 PRUEBAS FUNCION PruebaExisteCaminoConSuma                          PRUEBAS CORRECTAS
 ----------------------------------------------
 ----------------------------------------------
-Prueba es arbol balanceado 1 -> ERROR salida incorrecta
-	Parametros de entrada: {1,5,2}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 1 -> OK
 ----------------------------------------------
 Prueba es arbol balanceado 2 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 3 -> ERROR salida incorrecta
-	Parametros de entrada: {}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 3 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 4 -> ERROR salida incorrecta
-	Parametros de entrada: {1,5,2,4}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 4 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 5 -> ERROR salida incorrecta
-	Parametros de entrada: {1}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 5 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 6 -> ERROR salida incorrecta
-	Parametros de entrada: {1,2,2,4,3}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 6 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 7 -> ERROR salida incorrecta
-	Parametros de entrada: {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 7 -> OK
 ----------------------------------------------
 Prueba es arbol balanceado 8 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 9 -> ERROR salida incorrecta
-	Parametros de entrada: {1, 2, 3, 4, 5, #, 6}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 9 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 10 -> ERROR salida incorrecta
-	Parametros de entrada: {1, 2, 3, 4, 5, 6, 7}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 10 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 11 -> ERROR salida incorrecta
-	Parametros de entrada: {1,2,3,4,#,#,5}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 11 -> OK
 ----------------------------------------------
 Prueba es arbol balanceado 12 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 13 -> ERROR salida incorrecta
-	Parametros de entrada: {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,#,#,#,#,#,#,#,#,#,#,#,16}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 13 -> OK
 ----------------------------------------------
 Prueba es arbol balanceado 14 -> OK
 ----------------------------------------------
-Prueba es arbol balanceado 15 -> ERROR salida incorrecta
-	Parametros de entrada: {1,2,3,4,#,5}
-	Se esperaba: true
-	Se recibio:  false
+Prueba es arbol balanceado 15 -> OK
 ----------------------------------------------
-PRUEBAS FUNCION PruebaEsArbolBalanceado                            HAY PRUEBAS INCORRECTAS
+PRUEBAS FUNCION PruebaEsArbolBalanceado                            PRUEBAS CORRECTAS
 ----------------------------------------------
 ----------------------------------------------
 Prueba en nivel 1 -> OK
@@ -951,5 +891,5 @@ PRUEBAS FUNCION PruebaNivelConMasNodosAG                           HAY PRUEBAS I
 ----------------------------------------------
 ----------------------------------------------
 PRUEBAS FUNCIONES 
-PRUEBAS FUNCIONES                             RESULTADO ARBOLES => CORRECTAS:  1 INCORRECTAS: 17
+PRUEBAS FUNCIONES                             RESULTADO ARBOLES => CORRECTAS:  3 INCORRECTAS: 15
 PRUEBAS FUNCIONES 
