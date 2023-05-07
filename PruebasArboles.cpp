@@ -111,6 +111,7 @@ void PruebasArboles() {
 	FrameworkA1::ver(PruebaInvertirHastak("{1,2,3,#,4,5,6,#,#,#,#,7,8,#,#,#,9}", 5, "{1,3,2,6,5,4,#,8,7,#,#,#,#,9}", nroPrueba), correctos, error);
 	FrameworkA1::imprimirResultadoPrueba("PruebaInvertirHastak", nroPrueba, correctos, error, correctosTotal, errorTotal, ejCorrectosTotal, ejErrorTotal);
 
+	FrameworkA1::ver(PruebaBorrarNodoRaiz("{10,5,13,#,6,#,15,#,9,#,30,7}", "{5,6,7,9,13,15,30}", nroPrueba), correctos, error);//test
 	FrameworkA1::ver(PruebaBorrarNodoRaiz("{1}", "{}", nroPrueba), correctos, error);
 	FrameworkA1::ver(PruebaBorrarNodoRaiz("{1,#,2}", "{2}", nroPrueba), correctos, error);
 	FrameworkA1::ver(PruebaBorrarNodoRaiz("{3,2,6}", "{2,#,6}", nroPrueba), correctos, error);
